@@ -76,23 +76,83 @@ header {
   cursor: pointer;
 }
 
+.search {
+  position: relative;
+}
+
+.search-suggestion {
+  position: absolute;
+  margin-top: 30px;
+  padding: 20px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #322670;
+  left: 35%;
+  width: 270px;
+  background-color: white;
+  z-index: 2;
+}
+
+@media (max-width: 1240px) {
+  .search-suggestion {
+    left: 25%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .search-suggestion {
+    left: 10%;
+  }
+}
+
+@media (max-width: 991px) {
+  .search-suggestion {
+    left: 0;
+    width: 200px;
+  }
+}
+
 @media (max-width: 768px) {
   .header-input input {
     padding-left: 16px;
     width: 200px;
   }
+  .search-suggestion {
+    left: 16px;
+    width: 200px;
+  }
 }
+@media (max-width: 767px) {
+  .search-suggestion{
+    left: -40px;
+  }
+}
+
 @media (max-width: 560px) {
   .header-input input {
     padding-left: 10px;
     width: 150px;
   }
+  .search-suggestion {
+    font-size: 12px;
+    padding: 14px 10px;
+    left: 0px;
+    width: 130px;
+  }
 }
+
 @media (max-width: 425px) {
   .header-input input {
     padding-left: 10px;
     width: 100px;
   }
+  .search-suggestion {
+    font-size: 12px;
+    padding: 14px 10px;
+    left: 15px;
+    width: 100px;
+  }
+
   .input-content {
     position: absolute;
     top: 10px;
@@ -100,5 +160,11 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .search-suggestion{
+    left: 0;
   }
 }

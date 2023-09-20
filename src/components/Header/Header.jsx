@@ -4,11 +4,15 @@ import { Link } from 'react-router-dom'
 import './header.css'
 import Logo from './images/logo.svg'
 import Hamburger from './images/hamburger.svg'
-import {IoIosSearch} from 'react-icons/io'
+import { IoIosSearch } from 'react-icons/io'
 
 const Header = () => {
   const [show, setShow] = useState(false)
+  const [openInput, setOpenInput] = useState(false)
 
+  const handleInput = () => {
+    setOpenInput(true)
+  }
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
@@ -36,12 +40,24 @@ const Header = () => {
               </div>
             </Col>
             <Col xs={4}>
-              <div  className='header-input'>
-                <input type="text" />
-                <div className='input-content'>
-                  <span>|</span>
-                  <IoIosSearch></IoIosSearch>
+              <div className='search'>
+                <div className='header-input'>
+                  <input onClick={handleInput} type="text" />
+                  <div className='input-content'>
+                    <span>|</span>
+                    <IoIosSearch></IoIosSearch>
+                  </div>
                 </div>
+                {
+                  openInput &&
+                  <div className='search-suggestion'>
+                    <p>Conferences</p>
+                    <p>Corporate events</p>
+                    <p>Festival</p>
+                    <p>Expos</p>
+                    <p>Sports</p>
+                  </div>
+                }
               </div>
             </Col>
           </Row>

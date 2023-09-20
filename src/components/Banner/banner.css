@@ -1,3 +1,4 @@
+
 .banner-slider img {
     position: relative;
     width: 100%;
@@ -17,7 +18,6 @@
     position: absolute;
     top: 0;
     color: white;
-    padding-left: 140px;
     padding-top: 182px;
 }
 
