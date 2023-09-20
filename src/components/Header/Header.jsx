@@ -16,17 +16,14 @@ const Header = () => {
   };
 
   useEffect(() => {
-    // Function to close the input when clicking outside
     const handleClickOutside = (event) => {
       if (inputRef.current && !inputRef.current.contains(event.target)) {
         setOpenInput(false);
       }
     };
 
-    // Attach the event listener when the component mounts
     document.addEventListener('click', handleClickOutside);
 
-    // Cleanup: remove the event listener when the component unmounts
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
