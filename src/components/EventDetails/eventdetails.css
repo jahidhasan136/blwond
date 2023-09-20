@@ -1,0 +1,107 @@
+section.event-details-section {
+  background: linear-gradient(180deg, rgba(250, 250, 250, 0) 0%, #fafafa 100%);
+  padding: 100px 0;
+}
+
+.event-details-info {
+  background-color: #ffffff;
+}
+
+.event-details {
+  position: relative;
+}
+
+.event-details-info {
+  position: absolute;
+  bottom: 0;
+  max-width: 377px;
+  border-radius: 10px;
+  padding: 19px 12px;
+  left: 30px;
+  bottom: 30px;
+}
+
+.event-details-info p {
+  font-size: 16px;
+  color: #322670;
+  font-weight: 700;
+  position: relative;
+  padding-left: 61px;
+}
+
+.event-details-info p img {
+  position: absolute;
+  left: 0;
+}
+
+.event-details-info p:last-child {
+  margin-bottom: 0;
+}
+
+.event-details-content h2 {
+  font-size: 48px;
+  color: #322670;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.event-details-content p {
+  color: #424245;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.event-details-content p:last-child {
+  margin-bottom: 0;
+}
+
+.event-details-content {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .event-details-content h2 {
+    font-size: 30px;
+  }
+
+  .event-details-content p {
+    font-size: 16px;
+  }
+  .artists-list {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .event-details {
+    margin-bottom: 30px;
+  }
+
+  .event-details-content {
+    padding-left: 0;
+  }
+  .ticket-order-details.theme-border {
+    margin-top: 30px;
+  }
+
+  .order-summary.theme-border {
+    margin-bottom: 30px;
+  }
+
+  .order-summary-inner a.solid-btn {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .event-details-info {
+    position: relative;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+}

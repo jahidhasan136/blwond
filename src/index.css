@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.banner-search-box button {
+  transition: 0.3s;
+}
+
+.banner-search-box button:hover {
+  color: #fff;
+  background-color: #322670;
+}
+
+a.cart-button {
+  transition: 0.3s;
+}
+
+a.cart-button:hover {
+  background-color: #322670;
+  color: #fff;
+  border-color: #322670;
+}
+
+ul.social-media li a:hover {
+  background-color: #fff;
+  color: #110c27;
+}
+
+ul.social-media li a {
+  transition: 0.3s;
+}
+
+.footer-box.footer-menu ul li a:hover {
+  opacity: 1;
+}
+
+.footer-box.footer-menu ul li a {
+  transition: 0.3s;
+}
+
+span.arrow-top {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+span.arrow-top:hover {
+  transform: translateY(-5px);
+}
+
+.page-banner-button a:hover {
+  background-color: #fff;
+  color: #322670;
+}
+
+.page-banner-button a {
+  transition: 0.3s;
+}
+
+a.solid-btn {
+  transition: 0.3s;
+}
+
+a.solid-btn:hover {
+  background-color: #f8f2ff;
+  color: #9b65e4;
+}
+
+button.cancel-button:hover {
+  opacity: 0.7;
+}
+
+button.cancel-button {
+  transition: 0.3s;
+}

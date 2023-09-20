@@ -1,0 +1,264 @@
+.customer-details-section {
+  margin: 100px 0;
+}
+
+.customer-details-form-wrapper {
+  border: 1px solid #e4ecfe;
+  border-radius: 20px;
+}
+
+.customer-info h3 {
+  font-size: 32px;
+  color: #322670;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.customer-info {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: 1px solid #e4ecfe;
+  padding-bottom: 30px;
+}
+
+p.remaining-time {
+  font-weight: 700;
+  background-color: #322670;
+  font-size: 20px;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 16px;
+  border-radius: 6px;
+  max-width: 317px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.customer-details-form {
+  padding: 30px 40px;
+}
+
+.customer-details-form input[type='text'],
+.customer-details-form input[type='email'],
+.customer-details-form input[type='tel'] {
+  width: 100%;
+  background-color: #f9fafb;
+  border: none;
+  padding: 18px 20px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group h5 {
+  color: #7b788a;
+  font-size: 18px;
+}
+
+.form-group.gender-choose {
+  margin: 20px 0;
+}
+
+.form-group.gender-choose h5 {
+  font-weight: normal;
+  margin-right: 25px;
+}
+
+.form-group.gender-choose span {
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.form-group.gender-choose span:last-child {
+  margin-right: 0;
+}
+
+.form-group.gender-choose span input {
+  margin-right: 7px;
+}
+
+.order-summary-customer h4 {
+  color: #322670;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.order-summary-customer {
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-bottom: 1px solid #e4ecfe;
+}
+
+.order-summary-customer h4:after {
+  position: absolute;
+  right: 0;
+  background-color: #e5ecfe;
+  width: 70%;
+  height: 1px;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.order-summary-customer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.order-summary-customer ul li {
+  display: flex;
+  justify-content: space-between;
+  color: #7b788a;
+  font-size: 18px;
+  margin-bottom: 27px;
+}
+
+.order-summary-customer ul li:last-child {
+  margin-bottom: 0;
+}
+
+.order-summary-customer h4 {
+  margin-bottom: 30px;
+}
+
+.order-summary-customer ul li span:last-child {
+  color: #322670;
+  font-weight: 700;
+}
+
+.terms-conditions {
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+
+.terms-conditions p {
+  color: #424245;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 25px;
+}
+
+.terms-conditions p input {
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.confirm-buttons {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.confirm-buttons a {
+  width: 325px;
+  margin-top: 0;
+}
+
+button.cancel-button {
+  color: #161e4e;
+  font-size: 18px;
+  background-color: #f9fafb;
+  border: 1px solid #e5ecfe;
+  width: 325px;
+  padding: 12px 0;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1199px) {
+  .customer-details-section .artists-list {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .customer-info h3 {
+    font-size: 20px;
+  }
+  button.cancel-button {
+    width: 100%;
+  }
+
+  .confirm-buttons {
+    flex-direction: column;
+  }
+
+  .confirm-buttons a {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .confirm-buttons {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .customer-details-section {
+    margin: 50px 0;
+  }
+  .customer-info {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  p.remaining-time {
+    max-width: 100%;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .customer-info h3 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .customer-details-form input[type='text'],
+  .customer-details-form input[type='email'],
+  .customer-details-form input[type='tel'] {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .customer-details-form {
+    padding: 20px;
+  }
+
+  .customer-info {
+    padding: 20px;
+  }
+
+  .terms-conditions {
+    padding: 20px;
+  }
+
+  .order-summary-customer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .form-group h5 {
+    font-size: 16px;
+  }
+  .order-summary-customer h4:after {
+    display: none;
+  }
+}

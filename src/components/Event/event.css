@@ -1,0 +1,152 @@
+.event-item {
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.event-image {
+  height: 255px;
+  background-size: cover;
+  background-position: center;
+}
+
+.event-content h4 {
+  font-size: 24px;
+  color: #322670;
+  font-weight: 600;
+}
+
+.event-content {
+  padding: 27px;
+}
+
+.event-item {
+  box-shadow: 13.6403px 27.2806px 81.8418px -6.82015px rgb(122 122 122 / 20%);
+}
+
+.event-content p.location {
+  color: #7b788a;
+  font-size: 18px;
+  margin: 15px 0;
+  margin-bottom: 30px;
+}
+
+.event-content p.location img {
+  margin-right: 7px;
+}
+
+.event-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #322670;
+}
+
+.price p {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #7b788a;
+}
+
+a.cart-button {
+  color: #9b65e4;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid;
+  padding: 13px 20px;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+a.cart-button i {
+  margin-right: 5px;
+}
+
+select.form-select {
+  width: auto;
+  margin-right: 0;
+  margin-left: auto;
+  border: 2px solid #9b65e4;
+  padding: 15px 15px;
+  border-radius: 10px;
+  font-weight: 600;
+  color: #9b65e4;
+  text-align: center;
+}
+
+span.event-date {
+  color: #fff;
+  border: 1.5px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  backdrop-filter: blur(6.82015px);
+  display: inline-block;
+  position: absolute;
+  left: 19px;
+  top: 19px;
+  font-size: 18px;
+}
+
+.event-image {
+  position: relative;
+}
+
+.small-event .event-image {
+  height: 185px;
+}
+
+.small-event .event-content h4 {
+  font-size: 18px;
+}
+
+.small-event .event-content {
+  padding: 20px;
+}
+
+.small-event p.location {
+  font-size: 14px;
+  margin-top: 14px;
+  margin-bottom: 18px;
+}
+
+.small-event p.location img {
+  max-width: 18px;
+  margin-right: 4px;
+}
+
+.small-event a.cart-button {
+  font-size: 16px;
+  padding: 11px 14px;
+}
+
+.small-event .price p {
+  font-size: 14px;
+}
+
+.small-event .price span {
+  font-size: 20px;
+}
+
+.small-event.event-item {
+  border-radius: 10px;
+}
+
+span.event-date {
+  display: flex;
+  align-items: center;
+}
+
+span.event-date img {
+  margin-right: 5px;
+}
+
+.small-event span.event-date {
+  font-size: 14px;
+  left: 14px;
+  top: 14px;
+}
