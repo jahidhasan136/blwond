@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Col, Container, Row, Button, Offcanvas } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './header.css'
@@ -9,10 +9,28 @@ import { IoIosSearch } from 'react-icons/io'
 const Header = () => {
   const [show, setShow] = useState(false)
   const [openInput, setOpenInput] = useState(false)
+  const inputRef = useRef(null);
 
   const handleInput = () => {
-    setOpenInput(true)
-  }
+    setOpenInput(true);
+  };
+
+  useEffect(() => {
+    // Function to close the input when clicking outside
+    const handleClickOutside = (event) => {
+      if (inputRef.current && !inputRef.current.contains(event.target)) {
+        setOpenInput(false);
+      }
+    };
+
+    // Attach the event listener when the component mounts
+    document.addEventListener('click', handleClickOutside);
+
+    // Cleanup: remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
   const handleClose = () => setShow(false)
   const handleShow = () => setShow(true)
 
@@ -40,9 +58,9 @@ const Header = () => {
               </div>
             </Col>
             <Col xs={4}>
-              <div className='search'>
+              <div className='search' ref={inputRef}>
                 <div className='header-input'>
-                  <input onClick={handleInput} type="text" />
+                    <input onClick={handleInput} type="text" />
                   <div className='input-content'>
                     <span>|</span>
                     <IoIosSearch></IoIosSearch>

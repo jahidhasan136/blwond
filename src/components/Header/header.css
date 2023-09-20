@@ -140,8 +140,8 @@ header {
   .search-suggestion {
     font-size: 12px;
     padding: 14px 10px;
-    left: 0px;
-    width: 130px;
+    left: -70px;
+    width: 200px;
   }
 }
 
@@ -153,8 +153,8 @@ header {
   .search-suggestion {
     font-size: 12px;
     padding: 14px 10px;
-    left: 15px;
-    width: 100px;
+    left: -85px;
+    width: 200px;
   }
 
   .input-content {
@@ -169,6 +169,7 @@ header {
 
 @media (max-width: 375px) {
   .search-suggestion{
-    left: 0;
+    left: -110px;
+    width: 200px;
   }
 }
