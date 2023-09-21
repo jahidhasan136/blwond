@@ -19,8 +19,8 @@
 
 .input-content {
   position: absolute;
-  top: 10px;
-  right: 16px;
+  top: 16px;
+  left: 160px;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -30,8 +30,7 @@
   border: 1px solid #7B788A;
   padding-top: 14px;
   padding-bottom: 14px;
-  padding-left: 24px;
-  padding-right: 55px;
+  padding-left: 36px;
   width: 270px;
   height: 48px;
   border-radius: 8px;
@@ -92,9 +91,22 @@ header {
   background-color: white;
   z-index: 2;
 }
-.search-suggestion p{
+
+.search-suggestion p {
   cursor: pointer;
   font-weight: 500;
+}
+
+@media (max-width: 1399px) {
+  .input-content {
+    left: 100px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .input-content {
+    left: 40px;
+  }
 }
 
 @media (max-width: 1240px) {
@@ -114,29 +126,48 @@ header {
     left: 0;
     width: 200px;
   }
+
+  .input-content {
+    left: 0;
+  }
 }
 
 @media (max-width: 768px) {
   .header-input input {
-    padding-left: 16px;
+    padding-left: 35px;
     width: 200px;
   }
+
+  .input-content {
+    left: 30px;
+  }
+
   .search-suggestion {
     left: 16px;
     width: 200px;
   }
 }
+
 @media (max-width: 767px) {
-  .search-suggestion{
+  .search-suggestion {
     left: -40px;
+  }
+
+  .input-content {
+    left: -20px;
   }
 }
 
 @media (max-width: 560px) {
   .header-input input {
-    padding-left: 10px;
+    padding-left: 20px;
     width: 150px;
   }
+
+  .input-content {
+    left: 15px;
+  }
+
   .search-suggestion {
     font-size: 12px;
     padding: 14px 10px;
@@ -147,9 +178,10 @@ header {
 
 @media (max-width: 425px) {
   .header-input input {
-    padding-left: 10px;
+    padding-left: 24px;
     width: 100px;
   }
+
   .search-suggestion {
     font-size: 12px;
     padding: 14px 10px;
@@ -159,8 +191,9 @@ header {
 
   .input-content {
     position: absolute;
-    top: 10px;
+    top: 16px;
     right: 10px;
+    left: 25px;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -168,8 +201,12 @@ header {
 }
 
 @media (max-width: 375px) {
-  .search-suggestion{
+  .search-suggestion {
     left: -110px;
     width: 200px;
+  }
+
+  .input-content {
+    left: 10px;
   }
 }

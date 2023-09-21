@@ -57,9 +57,8 @@ const Header = () => {
             <Col xs={4}>
               <div className='search' ref={inputRef}>
                 <div className='header-input'>
-                    <input onClick={handleInput} type="text" />
+                    <input placeholder='search content ...' onClick={handleInput} type="text" />
                   <div className='input-content'>
-                    <span>|</span>
                     <IoIosSearch></IoIosSearch>
                   </div>
                 </div>

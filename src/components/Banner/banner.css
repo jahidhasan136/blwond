@@ -34,9 +34,23 @@
 
 
 .swiper-pagination-bullet {
+    background: var(--swiper-pagination-bullet-inactive-color, #fff)!important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-bottom: 40px !important;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 10)!important;
+}
+
+.swiper-pagination-bullet-active {
     background-color: #9B65E4 !important;
     width: 16px !important;
     height: 16px !important;
+    margin-bottom: 40px !important;
+    border-radius: 50%; /* Create a rounded shape */
+    box-shadow: 
+        0 0 0 2px black,
+        0 0 0 4px #9B65E4;
+    margin-right: 10px!important;
 }
 
 
