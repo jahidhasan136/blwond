@@ -27,7 +27,8 @@
 }
 
 .header-input input {
-  border: 1px solid #7B788A;
+  background-color: #F4F4F4;
+  border: 0;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 36px;
