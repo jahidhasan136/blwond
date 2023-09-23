@@ -55,7 +55,7 @@ header {
   z-index: 4;
 }
 
-.site-logo:after {
+.site-logo::after {
   position: absolute;
   background-color: #fff;
   content: '';

@@ -50,6 +50,36 @@ const Banner = () => {
             </div>
           </Container>
         </SwiperSlide>
+        <SwiperSlide className='banner-slider'>
+          <img src={imgOne} alt="" />
+          <div className='banner-gradient'></div>
+          <Container>
+            <div className='banner-content container'>
+              <h2>Revelado a través del querido caminar abortivo</h2>
+              <p>Su entrada al evento es su entrada a una experiencia.</p>
+            </div>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide className='banner-slider'>
+          <img src={imgOne} alt="" />
+          <div className='banner-gradient'></div>
+          <Container>
+            <div className='banner-content container'>
+              <h2>Revelado a través del querido caminar abortivo</h2>
+              <p>Su entrada al evento es su entrada a una experiencia.</p>
+            </div>
+          </Container>
+        </SwiperSlide>
+        <SwiperSlide className='banner-slider'>
+          <img src={imgOne} alt="" />
+          <div className='banner-gradient'></div>
+          <Container>
+            <div className='banner-content container'>
+              <h2>Revelado a través del querido caminar abortivo</h2>
+              <p>Su entrada al evento es su entrada a una experiencia.</p>
+            </div>
+          </Container>
+        </SwiperSlide>
       </Swiper>
     </section>
   )

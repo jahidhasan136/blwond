@@ -24,12 +24,14 @@
     font-size: 40px;
     line-height: 48px;
     width: 60%;
+    font-weight: 700;
     margin-bottom: 16px;
 }
 
 .banner-content p {
     font-size: 18px;
     opacity: 0.8;
+    font-weight: 500;
 }
 
 
@@ -51,6 +53,7 @@
         0 0 0 2px black,
         0 0 0 4px #9B65E4;
     margin-right: 10px!important;
+    margin-left: 10px!important;
 }
 
 
