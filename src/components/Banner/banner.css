@@ -37,9 +37,9 @@
 
 .swiper-pagination-bullet {
     background: var(--swiper-pagination-bullet-inactive-color, #fff)!important;
-    width: 16px !important;
-    height: 16px !important;
-    margin-bottom: 40px !important;
+    width: 13px !important;
+    height: 13px !important;
+    margin-bottom: 41px !important;
     opacity: var(--swiper-pagination-bullet-inactive-opacity, 10)!important;
 }
 
@@ -50,8 +50,8 @@
     margin-bottom: 40px !important;
     border-radius: 50%; /* Create a rounded shape */
     box-shadow: 
-        0 0 0 2px black,
-        0 0 0 4px #9B65E4;
+        0 0 0 4px black,
+        0 0 0 6px #9B65E4;
     margin-right: 10px!important;
     margin-left: 10px!important;
 }
